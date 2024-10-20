@@ -21,11 +21,11 @@ JavaScript: Interactive functionality for form submission and other dynamic elem
 
 File Structure
 
-├── index.html         # Main HTML file
-├── styles.css         # CSS file for styling
-├── script.js          # JavaScript file for interactivity
-├── salini-photo.jpg   # profile photo used
-└── README.md          # This readme file
+--- index.html         # Main HTML file
+--- styles.css         # CSS file for styling
+--- script.js          # JavaScript file for interactivity
+--- salini-photo.jpg   # profile photo used
+--- README.md          # This readme file
 
 Sections Overview
 
