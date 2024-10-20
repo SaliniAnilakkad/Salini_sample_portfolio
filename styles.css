@@ -1,0 +1,261 @@
+/* Global Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; 
+}
+
+h1, h2, h3 {
+    margin-top: 4px;
+    margin-bottom: 8px;
+    color: #ffffff; /* White for headings */
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #1f1f1f; /* Dark grey */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px; /* Increased margin for spacing */
+}
+
+nav ul li a {
+    color: #ffffff; /* White for links */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+
+nav ul li a:hover {
+    color: #f39c12; /* Orange on hover */
+}
+
+/* Main Section Styling */
+section {
+    padding: 40px 10px;
+    margin-top: 60px;
+}
+
+#Home {
+    background-color: #1f1f1f; /* Dark grey */
+    text-align: center;
+    padding: 20px 10px;
+}
+
+#Home h1 {
+    font-size: 2rem;
+}
+
+/* About Section with Image and Text Side by Side */
+#About {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    background-color: #282828; /* Slightly lighter grey */
+}
+
+.about-photo {
+    margin-right: 100px; /* Space between image and text */
+}
+
+.about-photo img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #444; /* Dark border */
+}
+
+.about-text {
+    max-width: 400px;
+    text-align: left;
+}
+
+/* Education Section */
+#Education {
+    background-color: #1f1f1f;
+    padding: 40px 10px;
+    display: flex;
+    justify-content: center; /* Center the section */
+}
+
+.education-container {
+    max-width: 800px; /* Limit the width to make it look centered */
+    text-align: left; /* Left-align text within the container */
+}
+
+#Education h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Projects Section */
+#Projects {
+    background-color: #282828;
+    padding: 40px 10px;
+    display: flex;
+    justify-content: center; /* Center the section */
+}
+
+.projects-container {
+    max-width: 800px; /* Limit the width to make it look centered */
+    text-align: left; /* Left-align text within the container */
+}
+
+#Projects h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#Projects h3 {
+    margin-top: 20px; /* Space above each project title */
+}
+
+#Projects ul {
+    list-style-type: disc; /* Default bullet style for project details */
+    margin-left: 20px; /* Indent for nested lists */
+}
+
+/* Certifications Section */
+#Certifications {
+    background-color: #282828; /* Dark grey background */
+    padding: 40px 10px;
+    text-align: center;
+}
+
+#Certifications h2 {
+    color: #ffffff; /* White heading */
+    margin-bottom: 20px;
+}
+
+#Certifications ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+}
+
+#Certifications ul li {
+    margin: 10px 0;
+}
+
+#Certifications ul li a {
+    color: #e6e6fa; /* Lavender color for links */
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+#Certifications ul li a:hover {
+    color: #d8bfd8; /* Darker lavender on hover */
+}
+
+/* Contact Section */
+#Contact {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+#Contact h2 {
+    margin-bottom: 10px;
+    color: #ffffff; /* White for heading */
+}
+
+#Contact p {
+    font-size: 1rem;
+    color: #e0e0e0; /* Light grey for text */
+}
+
+#Contact p a {
+    color: #e6e6fa; /* Lavender color for LinkedIn link */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#Contact p a:hover {
+    color: #d8bfd8; /* Darker lavender on hover */
+}
+
+#Contact form {
+    text-align: left;
+    margin: 20px auto; /* Center the form */
+    max-width: 400px; /* Max width for the form */
+}
+
+#Contact form label {
+    display: block;
+    margin: 10px 0 5px; /* Spacing for labels */
+}
+
+#Contact form input, #Contact form textarea {
+    width: 100%; /* Full width */
+    padding: 10px;
+    border: 1px solid #444; /* Dark border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #1f1f1f; /* Match background */
+    color: #e0e0e0; /* Light text color */
+}
+
+#Contact form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Button Styling */
+button {
+    background-color: #335eff; /* Blues background */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Slightly rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+    margin-top: 10px; /* Space above button */
+}
+
+button:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #About {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-photo {
+        margin: 0 0 10px;
+    }
+    
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin for stacked items */
+    }
+
+    #Contact form {
+        max-width: 90%; /* Adjust max-width for mobile */
+    }
+}

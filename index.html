@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Salini A P</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	
+    <nav>
+        <!-- Navigation Bar -->	
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Projects">Projects</a></li>
+	        <li><a href="#Certifications">Certifications</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home section -->
+    <section id="Home">
+        <header><h1>SALINI A P</h1></header>
+    </section>
+
+    <!--About Me -->
+    <section id="About">
+        <div class="about-photo">
+            <img src="salini-photo.jpg" alt="Salini A P, MCA student">
+        </div>
+        <div class="about-text">
+            <h2>ABOUT ME</h2>
+            <p>Enthusiastic MCA student with a strong foundation in software development, artificial intelligence, and network security. Completed an online training program in Ethical Hacking and Penetration Testing, along with a virtual internship at the Centre for Development of Advanced Computing (C-DAC), Noida, under the Cyber Gyan Project. Engaged in an internship at IBM SkillsBuild focused on developing a machine learning model for kidney stone detection and creating a personalized diet plan chatbot using IBM WatsonX. Proficient in programming languages such as Python, C, C++, and Java, with hands-on experience in database management (MySQL, MongoDB) and network security solutions. Strong critical thinking, adaptability, and time management skills, eager to contribute to innovative projects and expand technical expertise.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+<section id="Education">
+    <div class="education-container">
+        <h2>EDUCATION</h2>
+        <ul>
+            <li><b>Cochin University of Science and Technology<br>Master of Computer Applications</b><br>July 2023 - May 2025</li><br>
+            <li><b>University of Calicut<br>  BSc Mathematics</b><br>  July 2020 - May 2023<br>CGPA - 7.733</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="Projects">
+    <div class="projects-container">
+        <h2>PROJECTS</h2>
+        <h3>HARDENING NETWORK: INTRUSION DETECTION AND WEBSITE BLOCKING</h3>
+        <ul> 
+            <li>Developed a network security solution with pfSense.</li>
+            <li>Implemented Intrusion Detection to monitor and alert on threats.</li>
+            <li>Configured Website Blocking to restrict access to harmful sites.</li>
+        </ul>
+
+        <h3>CHATBOT FOR DIET PLAN SUGGESTIONS</h3>
+        <ul> 
+            <li>Developed a chatbot using IBM Watsonx Assistant to suggest personalized diet plans.</li>
+            <li>Deployed the chatbot on a website, enabling personalized diet recommendations according to user needs.</li>
+        </ul>
+    </div>
+</section>
+
+
+
+    <!--Certifications-->
+    <section id="Certifications">
+	<h2>CERTIFICATIONS</h2>
+	<ul>
+	<li><a href="https://drive.google.com/file/d/1wPyQMz_D297ivKiIY6k0MGChqYPREcGS/view" target="_blank">Ethical Hacking and Penetration Testing by C-DAC Noida</a></li>
+	<li><a href="https://www.credly.com/badges/a892f6f2-d4d1-400a-9922-781bdf3956d5/public_url" target="_blank">Getting Started with Artificial Intelligence by IBM SkillsBuild.</a></li>
+	<li><a href="https://www.credly.com/badges/fd6b51e6-c136-4737-91ab-72c02ecd0e4f/public_url" target="_blank">Artificial Intelligence Fundementals by IBM SkillsBuild.</a></li>
+	</ul>
+    </section>
+
+    <!--Contact-->
+    <section id="Contact">
+        <h2>CONTACT</h2>
+        <p>Mob: +91 6282894534<br>Email: salini.anilakkad@gmail.com<br><a href="https://www.linkedin.com/in/saliniap/" target="_blank">linkedin.com/in/saliniap</a></p>
+
+        <form id="contact-form" action="your-server-endpoint" method="post">
+            <p>Fill the details for contacting:</p>
+            <label for="name">Name : </label>
+            <input type="text" id="name" placeholder="Enter Name" required><br>
+            <label for="email">Email : </label>
+            <input type="email" id="email" placeholder="Enter Email id" required><br>
+            <label for="phone">Mobile : </label>
+            <input type="tel" id="phone" placeholder="Enter Mobile Number" required><br>
+            <label for="message">Enter your message:</label><br>
+            <textarea id="message" placeholder="Enter your message here : " rows="4"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+	<div id="thank-you-message" style="display: none; color: #335eff;">Thank You for Contacting!</div>
+    </section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
